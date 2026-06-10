@@ -697,10 +697,22 @@ body {
 
     color: white;
 }
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.experience-header h2 {
+    margin: 0;
+    
+}
 
 .experience-date {
     color: #00BFFF;
     font-weight: 600;
+    margin-left: auto;
 }
 
 .experience-content h2 {
