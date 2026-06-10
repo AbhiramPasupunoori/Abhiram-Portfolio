@@ -609,6 +609,114 @@ body {
     color: #cccccc;
 }
 /* =========================
+   EXPERIENCE SECTION
+========================= */
+
+.experience {
+    padding: 120px 10%;
+}
+
+.experience-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.experience-title::after {
+    content: '';
+    display: block;
+    width: 23%;
+    height: 2px;
+    background: #00BFFF;
+    margin: 3px auto 0;
+    border-radius: 10px;
+}
+
+.experience-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.experience-container::before {
+    content: '';
+
+    position: absolute;
+
+    left: 30px;
+    top: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: rgba(0, 191, 255, 0.3);
+}
+
+.experience-card {
+    position: relative;
+
+    margin-bottom: 50px;
+    margin-left: 80px;
+
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 2px solid rgba(0, 191, 255, 0.2);
+
+    border-radius: 20px;
+
+    transition: 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #00BFFF;
+
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.experience-icon {
+    position: absolute;
+
+    left: -67px;
+    top: 35px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #00BFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.experience-date {
+    color: #00BFFF;
+    font-weight: 600;
+}
+
+.experience-content h2 {
+    margin: 15px 0 5px;
+}
+
+.experience-content h3 {
+    color: #d1d5db;
+    margin-bottom: 15px;
+}
+
+.experience-content p {
+    color: #d1d5db;
+    line-height: 1.8;
+}
+/* =========================
    SKILLS SECTION
 ========================= */
 .skill-card {
