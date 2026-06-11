@@ -947,35 +947,100 @@ body {
 /* =========================
    SKILLS SECTION
 ========================= */
-.skill-card {
-    display: inline-block;
 
-    padding: 15px 25px;
-    margin: 10px;
+.skills {
+    padding: 120px 10%;
+    min-height: 100vh;
+}
 
+.skills-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.skills-title::after {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 2px;
+    background: #00BFFF;
+    margin: 3px auto 0;
     border-radius: 10px;
-    background: #323232d8;
+}
 
-    transition: transform 0.3s ease;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(0, 191, 255, 0.2);
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    border-color: #00BFFF;
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.3);
 }
-/* Tablet */
-@media (max-width: 1024px) {
-    .certificate-container {
+
+.skill-card i {
+    font-size: 3rem;
+    color: #00BFFF;
+    margin-bottom: 25px;
+}
+
+.skill-card h2 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skill-tags span {
+    background: rgba(0, 191, 255, 0.15);
+    color: #00BFFF;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.skill-tags span:hover {
+    background: #00BFFF;
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .skills-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
-    .certificate-container {
+    .skills-container {
         grid-template-columns: 1fr;
     }
-}
 
+    .skills-title {
+        font-size: 2.5rem;
+    }
+}
 /* =========================
    FORMS
 ========================= */
